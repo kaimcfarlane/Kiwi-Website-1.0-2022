@@ -1,0 +1,1124 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+/* This is the font style for the navigation menu*/
+
+@import url("https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap");
+
+@media (min-width: 945px) {
+  a {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+  }
+
+  body {
+    background-color: black;
+    margin: 0;
+  }
+
+  /*This is the style for the background of the navigation menu*/
+  #expandbtn {
+    display: none;
+  }
+
+  #backgroundnavigationmenu {
+    height: 100px;
+    background-image: linear-gradient(
+      to right,
+      rgb(45, 45, 248),
+      rgb(20, 243, 20)
+    );
+    position: fixed;
+    width: 100%;
+  }
+
+  /*This is the style for the items on our nav*/
+  .navigationitems {
+    color: white;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .item {
+    transition: all 0.3s ease 0s;
+  }
+
+  .item:hover {
+    color: black;
+  }
+
+  .item {
+    display: inline-flex;
+    padding-left: 30px;
+  }
+
+  /* This sets up how every piece of ocntent in the header interacts 
+with each other, so every css before this set up how the content
+inthe other divs interected*/
+  .navigationlogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    color: antiquewhite;
+  }
+
+  .text {
+    color: aliceblue;
+    font-size: 200px;
+  }
+
+  /* This is the banner that goes inbetween SM and Nav*/
+  .editbanner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+    overflow: hidden;
+  }
+
+  .youtubecontent {
+    justify-content: space-around;
+  }
+
+  .canvaslink {
+    font-family: "Monserrat", sans-serif;
+    background-image: linear-gradient(
+      to right,
+      rgb(45, 45, 248),
+      rgb(20, 243, 20)
+    );
+    cursor: pointer;
+    width: 200px;
+    padding: 14px 40px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 12px;
+    border-color: white;
+    color: black;
+    transition-duration: 0.5s;
+    box-shadow: 2px 4px 0px 0px;
+    text-align: center;
+  }
+
+  .canvaslink:hover {
+    background-image: linear-gradient(
+      to right,
+      rgb(45, 45, 248),
+      rgb(20, 243, 20)
+    );
+    color: white;
+  }
+}
+
+.canvasform {
+  text-align: center;
+}
+
+.canvascontainer {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  align-content: space-around;
+  background-image: linear-gradient(
+    to right,
+    rgb(45, 45, 248),
+    rgb(20, 243, 20)
+  );
+  padding-top: 20px;
+}
+
+.canvastext {
+  text-align: center;
+  width: 500px;
+  font-size: 35px;
+}
+
+.projectlink {
+  font-family: "Monserrat", sans-serif;
+  background-image: linear-gradient(
+    to right,
+    rgb(45, 45, 248),
+    rgb(20, 243, 20)
+  );
+  cursor: pointer;
+  width: 200px;
+  padding: 14px 40px;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 12px;
+  border-color: white;
+  color: black;
+  transition-duration: 0.5s;
+  box-shadow: 2px 4px 0px 0px;
+  text-align: center;
+}
+
+.projectlink:hover {
+  background-image: linear-gradient(
+    to right,
+    rgb(45, 45, 248),
+    rgb(20, 243, 20)
+  );
+  color: white;
+}
+
+.projectform {
+  text-align: center;
+}
+
+.projectcontainer {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  align-content: space-around;
+  background-image: linear-gradient(
+    to right,
+    rgb(45, 45, 248),
+    rgb(20, 243, 20)
+  );
+  padding-top: 20px;
+}
+
+.projecttext {
+  text-align: center;
+  width: 500px;
+  font-size: 35px;
+}
+
+.kiwilink {
+  font-family: "Monserrat", sans-serif;
+  background-image: linear-gradient(
+    to right,
+    rgb(45, 45, 248),
+    rgb(20, 243, 20)
+  );
+  cursor: pointer;
+  width: 200px;
+  padding: 14px 40px;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 12px;
+  border-color: white;
+  color: black;
+  transition-duration: 0.5s;
+  box-shadow: 2px 4px 0px 0px;
+  text-align: center;
+}
+
+.kiwilink:hover {
+  background-image: linear-gradient(
+    to right,
+    rgb(45, 45, 248),
+    rgb(20, 243, 20)
+  );
+  color: white;
+}
+
+.kiwiform {
+  text-align: center;
+}
+
+.kiwicontainer {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  align-content: space-around;
+  background-image: linear-gradient(
+    to right,
+    rgb(45, 45, 248),
+    rgb(20, 243, 20)
+  );
+  padding-top: 20px;
+}
+
+.kiwitext {
+  text-align: center;
+  width: 500px;
+  font-size: 35px;
+}
+
+.virtuallink {
+  font-family: "Monserrat", sans-serif;
+  background-image: linear-gradient(
+    to right,
+    rgb(45, 45, 248),
+    rgb(20, 243, 20)
+  );
+  cursor: pointer;
+  width: 200px;
+  padding: 14px 40px;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 12px;
+  border-color: white;
+  color: black;
+  transition-duration: 0.5s;
+  box-shadow: 2px 4px 0px 0px;
+  text-align: center;
+}
+
+.virtuallink:hover {
+  background-image: linear-gradient(
+    to right,
+    rgb(45, 45, 248),
+    rgb(20, 243, 20)
+  );
+  color: white;
+}
+
+.virtualform {
+  text-align: center;
+}
+
+.virtualcontainer {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  align-content: space-around;
+  background-image: linear-gradient(
+    to right,
+    rgb(45, 45, 248),
+    rgb(20, 243, 20)
+  );
+  padding-top: 90px;
+}
+
+.virtualtext {
+  text-align: center;
+  width: 500px;
+  font-size: 35px;
+}
+
+.semesterlink {
+  font-family: "Monserrat", sans-serif;
+  background-image: linear-gradient(
+    to right,
+    rgb(45, 45, 248),
+    rgb(20, 243, 20)
+  );
+  cursor: pointer;
+  width: 200px;
+  padding: 14px 40px;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 12px;
+  border-color: white;
+  color: black;
+  transition-duration: 0.5s;
+  box-shadow: 2px 4px 0px 0px;
+  text-align: center;
+}
+
+.semesterlink:hover {
+  background-image: linear-gradient(
+    to right,
+    rgb(45, 45, 248),
+    rgb(20, 243, 20)
+  );
+  color: white;
+}
+
+.semesterform {
+  text-align: center;
+}
+
+.semestercontainer {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  align-content: space-around;
+  background-image: linear-gradient(
+    to right,
+    rgb(45, 45, 248),
+    rgb(20, 243, 20)
+  );
+  padding-top: 90px;
+}
+
+.semestertext {
+  text-align: center;
+  width: 500px;
+  font-size: 35px;
+}
+
+.volunteerlink {
+  font-family: "Monserrat", sans-serif;
+  background-image: linear-gradient(
+    to right,
+    rgb(45, 45, 248),
+    rgb(20, 243, 20)
+  );
+  cursor: pointer;
+  width: 200px;
+  padding: 14px 40px;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 12px;
+  border-color: white;
+  color: black;
+  transition-duration: 0.5s;
+  box-shadow: 2px 4px 0px 0px;
+  text-align: center;
+}
+
+.volunteerlink:hover {
+  background-image: linear-gradient(
+    to right,
+    rgb(45, 45, 248),
+    rgb(20, 243, 20)
+  );
+  color: white;
+}
+
+.volunteerform {
+  text-align: center;
+}
+
+.volunteercontainer {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  align-content: space-around;
+  background-image: linear-gradient(
+    to right,
+    rgb(45, 45, 248),
+    rgb(20, 243, 20)
+  );
+  padding-top: 90px;
+}
+
+.volunteertext {
+  text-align: center;
+  width: 500px;
+  font-size: 35px;
+}
+
+.exemptionlink {
+  font-family: "Monserrat", sans-serif;
+  background-image: linear-gradient(
+    to right,
+    rgb(45, 45, 248),
+    rgb(20, 243, 20)
+  );
+  cursor: pointer;
+  width: 200px;
+  padding: 14px 40px;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 12px;
+  border-color: white;
+  color: black;
+  transition-duration: 0.5s;
+  box-shadow: 2px 4px 0px 0px;
+  text-align: center;
+}
+
+.exemptionlink:hover {
+  background-image: linear-gradient(
+    to right,
+    rgb(45, 45, 248),
+    rgb(20, 243, 20)
+  );
+  color: white;
+}
+
+.exemptionform {
+  text-align: center;
+}
+
+.exemptioncontainer {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  align-content: space-around;
+  background-image: linear-gradient(
+    to right,
+    rgb(45, 45, 248),
+    rgb(20, 243, 20)
+  );
+  padding-top: 80px;
+}
+
+.exemptiontext {
+  text-align: center;
+  width: 500px;
+  font-size: 35px;
+}
+
+.linearlink {
+  font-family: "Monserrat", sans-serif;
+  background-image: linear-gradient(
+    to right,
+    rgb(45, 45, 248),
+    rgb(20, 243, 20)
+  );
+  cursor: pointer;
+  width: 200px;
+  padding: 14px 40px;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 12px;
+  border-color: white;
+  color: black;
+  transition-duration: 0.5s;
+  box-shadow: 2px 4px 0px 0px;
+  text-align: center;
+}
+
+.linearlink:hover {
+  background-image: linear-gradient(
+    to right,
+    rgb(45, 45, 248),
+    rgb(20, 243, 20)
+  );
+  color: white;
+}
+
+.linearform {
+  text-align: center;
+}
+
+.linearcontainer {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  align-content: space-around;
+  background-image: linear-gradient(
+    to right,
+    rgb(45, 45, 248),
+    rgb(20, 243, 20)
+  );
+  padding-top: 80px;
+}
+
+.lineartext {
+  text-align: center;
+  width: 500px;
+  font-size: 35px;
+}
+
+.factorlink {
+  font-family: "Monserrat", sans-serif;
+  background-image: linear-gradient(
+    to right,
+    rgb(45, 45, 248),
+    rgb(20, 243, 20)
+  );
+  cursor: pointer;
+  width: 200px;
+  padding: 14px 40px;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 12px;
+  border-color: white;
+  color: black;
+  transition-duration: 0.5s;
+  box-shadow: 2px 4px 0px 0px;
+  text-align: center;
+}
+
+.factorlink:hover {
+  background-image: linear-gradient(
+    to right,
+    rgb(45, 45, 248),
+    rgb(20, 243, 20)
+  );
+  color: white;
+}
+
+.factorform {
+  text-align: center;
+}
+
+.factorcontainer {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  align-content: space-around;
+  background-image: linear-gradient(
+    to right,
+    rgb(45, 45, 248),
+    rgb(20, 243, 20)
+  );
+  padding-top: 95px;
+}
+
+.factortext {
+  text-align: center;
+  width: 500px;
+  font-size: 35px;
+}
+
+.quadraticslink {
+  font-family: "Monserrat", sans-serif;
+  background-image: linear-gradient(
+    to right,
+    rgb(45, 45, 248),
+    rgb(20, 243, 20)
+  );
+  cursor: pointer;
+  width: 200px;
+  padding: 14px 40px;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 12px;
+  border-color: white;
+  color: black;
+  transition-duration: 0.5s;
+  box-shadow: 2px 4px 0px 0px;
+  text-align: center;
+}
+
+.quadraticslink:hover {
+  background-image: linear-gradient(
+    to right,
+    rgb(45, 45, 248),
+    rgb(20, 243, 20)
+  );
+  color: white;
+}
+
+.quadraticsform {
+  text-align: center;
+}
+
+.quadraticscontainer {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  align-content: space-around;
+  background-image: linear-gradient(
+    to right,
+    rgb(45, 45, 248),
+    rgb(20, 243, 20)
+  );
+  padding-top: 95px;
+}
+
+.quadraticstext {
+  text-align: center;
+  width: 500px;
+  font-size: 35px;
+}
+
+.systemslink {
+  font-family: "Monserrat", sans-serif;
+  background-image: linear-gradient(
+    to right,
+    rgb(45, 45, 248),
+    rgb(20, 243, 20)
+  );
+  cursor: pointer;
+  width: 200px;
+  padding: 14px 40px;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 12px;
+  border-color: white;
+  color: black;
+  transition-duration: 0.5s;
+  box-shadow: 2px 4px 0px 0px;
+  text-align: center;
+}
+
+.systemslink:hover {
+  background-image: linear-gradient(
+    to right,
+    rgb(45, 45, 248),
+    rgb(20, 243, 20)
+  );
+  color: white;
+}
+
+.systemsform {
+  text-align: center;
+}
+
+.systemscontainer {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  align-content: space-around;
+  background-image: linear-gradient(
+    to right,
+    rgb(45, 45, 248),
+    rgb(20, 243, 20)
+  );
+  padding-top: 90px;
+}
+
+.systemstext {
+  text-align: center;
+  width: 500px;
+  font-size: 35px;
+}
+
+.inequalitieslink {
+  font-family: "Monserrat", sans-serif;
+  background-image: linear-gradient(
+    to right,
+    rgb(45, 45, 248),
+    rgb(20, 243, 20)
+  );
+  cursor: pointer;
+  width: 200px;
+  padding: 14px 40px;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 12px;
+  border-color: white;
+  color: black;
+  transition-duration: 0.5s;
+  box-shadow: 2px 4px 0px 0px;
+  text-align: center;
+}
+
+.inequalitieslink:hover {
+  background-image: linear-gradient(
+    to right,
+    rgb(45, 45, 248),
+    rgb(20, 243, 20)
+  );
+  color: white;
+}
+
+.inequalitiesform {
+  text-align: center;
+}
+
+.inequalitiescontainer {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  align-content: space-around;
+  background-image: linear-gradient(
+    to right,
+    rgb(45, 45, 248),
+    rgb(20, 243, 20)
+  );
+  padding-top: 90px;
+}
+
+.inequalitiestext {
+  text-align: center;
+  width: 500px;
+  font-size: 35px;
+}
+
+.satlink {
+  font-family: "Monserrat", sans-serif;
+  background-image: linear-gradient(
+    to right,
+    rgb(45, 45, 248),
+    rgb(20, 243, 20)
+  );
+  cursor: pointer;
+  width: 200px;
+  padding: 14px 40px;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 12px;
+  border-color: white;
+  color: black;
+  transition-duration: 0.5s;
+  box-shadow: 2px 4px 0px 0px;
+  text-align: center;
+}
+
+.satlink:hover {
+  background-image: linear-gradient(
+    to right,
+    rgb(45, 45, 248),
+    rgb(20, 243, 20)
+  );
+  color: white;
+}
+
+.satform {
+  text-align: center;
+}
+
+.satcontainer {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  align-content: space-around;
+  background-image: linear-gradient(
+    to right,
+    rgb(45, 45, 248),
+    rgb(20, 243, 20)
+  );
+  padding-top: 98px;
+  padding-bottom: 40px;
+}
+
+.sattext {
+  text-align: center;
+  width: 500px;
+  font-size: 35px;
+}
+
+.youtubeheader {
+  color: white;
+  text-align: center;
+  background-image: linear-gradient(
+    to right,
+    rgb(45, 45, 248),
+    rgb(20, 243, 20)
+  );
+  font-family: "Akaya Kanadaka", cursive;
+  font-size: 35px;
+}
+
+.youtubeelements {
+  color: aliceblue;
+  text-align: center;
+  font-size: 40px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  background-image: linear-gradient(to right, rgba(49, 48, 48, 0.993), black);
+}
+
+/* This is the container for the boxes and social media*/
+.container {
+  width: 100%;
+  height: 150px;
+  background-image: linear-gradient(
+    to right,
+    rgb(45, 45, 248),
+    rgb(20, 243, 20)
+  );
+
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+}
+/* Style fo the buttons links to SM */
+.SMlogo {
+  font-family: "Monserrat", sans-serif;
+  background-image: linear-gradient(rgb(45, 45, 248), rgb(20, 243, 20));
+  cursor: pointer;
+  width: 200px;
+  padding: 14px 40px;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 12px;
+  border-color: black;
+  color: white;
+  transition-duration: 0.5s;
+  box-shadow: 2px 4px 0px 0px;
+}
+
+/* The hover color for links for SM */
+.SMlogo:hover {
+  background-image: linear-gradient(
+    to right,
+    rgb(45, 45, 248),
+    rgb(20, 243, 20)
+  );
+  color: black;
+}
+
+/* This for all media under a desktop screen size */
+@media (max-width: 945px) {
+  a {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+  }
+
+  body {
+    background-color: black;
+    margin: 0;
+  }
+
+  /*This is the style for the background of the navigation menu*/
+  #backgroundnavigationmenu {
+    height: 100px;
+    background-image: linear-gradient(
+      to right,
+      rgb(45, 45, 248),
+      rgb(20, 243, 20)
+    );
+    position: fixed;
+    width: 100%;
+  }
+
+  /*This is the style for the items on our nav*/
+  #expandbtn {
+    font-family: "Monserrat", sans-serif;
+    background-image: linear-gradient(rgb(45, 45, 248), rgb(20, 243, 20));
+    cursor: pointer;
+    width: 200px;
+    padding: 14px 40px;
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 6px;
+    border-color: black;
+    color: white;
+    transition-duration: 0.5s;
+    box-shadow: 2px 4px 0px 0px;
+  }
+
+  #expandbtn:hover {
+    background-image: linear-gradient(
+      to right,
+      rgb(45, 45, 248),
+      rgb(20, 243, 20)
+    );
+    color: black;
+  }
+
+  .navigationitems {
+    color: white;
+    display: grid;
+    grid-template-columns: auto;
+    cursor: pointer;
+    background-color: rgb(42, 179, 133);
+    margin: 0;
+    width: 100%;
+    position: absolute;
+    top: 80px;
+    left: -100%;
+    opacity: 0;
+    transition: all 0.5s ease;
+    justify-content: center;
+  }
+
+  .navigationitems.active {
+    background-color: rgb(41, 39, 39);
+    left: 0;
+    opacity: 1;
+    transition: all 0.5s ease;
+  }
+
+  .item {
+    text-align: center;
+    line-height: 60px;
+    width: 100%;
+    display: table;
+    text-align: center;
+    transition: all 0.3s ease 0s;
+    color: aliceblue;
+  }
+
+  .item:hover {
+    transition: all 0.4s ease-out;
+    color: black;
+    background-color: rgb(79, 232, 133);
+    border-radius: 8px;
+    border-style: dotted;
+  }
+
+  #mobile-menu {
+    position: absolute;
+    top: 25%;
+    right: 5%;
+  }
+
+  #mobile-menu.active {
+    /* blah blah */
+  }
+
+  .bar {
+    display: block;
+    cursor: pointer;
+  }
+
+  .menu-toggle:hover {
+    cursor: pointer;
+  }
+
+  /* This sets up how every piece of ocntent in the header interacts 
+    with each other, so every css before this set up how the content
+    in the other divs interected*/
+  .navigationlogo {
+    position: relative;
+    width: 100%;
+  }
+
+  .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    color: antiquewhite;
+  }
+
+  .text {
+    color: aliceblue;
+    font-size: 200px;
+  }
+
+  /* This is the banner that goes inbetween SM and Nav*/
+  .editbanner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+    overflow: hidden;
+  }
+
+  /* This is the container for the boxes and social media*/
+  .container {
+    width: 100%;
+    height: 150px;
+    background-image: linear-gradient(
+      to right,
+      rgb(45, 45, 248),
+      rgb(20, 243, 20)
+    );
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+  }
+  /* Style fo the buttons links to SM */
+  .SMlogo {
+    font-family: "Monserrat", sans-serif;
+    background-image: linear-gradient(rgb(45, 45, 248), rgb(20, 243, 20));
+    cursor: pointer;
+    width: 200px;
+    padding: 14px 40px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 12px;
+    border-color: black;
+    color: white;
+    transition-duration: 0.5s;
+    box-shadow: 2px 4px 0px 0px;
+  }
+
+  /* This is the container for the boxes and social media*/
+  .container {
+    width: 100%;
+    height: 710px;
+    background-image: linear-gradient(
+      to right,
+      rgb(45, 45, 248),
+      rgb(20, 243, 20)
+    );
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+  }
+  /* Style fo the buttons links to SM */
+  .SMlogo {
+    font-family: "Monserrat", sans-serif;
+    background-image: linear-gradient(rgb(45, 45, 248), rgb(20, 243, 20));
+    cursor: pointer;
+    width: 200px;
+    padding: 14px 40px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 12px;
+    border-color: black;
+    color: white;
+    transition-duration: 0.5s;
+    box-shadow: 2px 4px 0px 0px;
+  }
+
+  /* The hover color for links for SM */
+  .SMlogo:hover {
+    background-image: linear-gradient(
+      to right,
+      rgb(45, 45, 248),
+      rgb(20, 243, 20)
+    );
+    color: black;
+  }
+}
+
+.canvaslink {
+  font-family: "Monserrat", sans-serif;
+  background-image: linear-gradient(
+    to right,
+    rgb(45, 45, 248),
+    rgb(20, 243, 20)
+  );
+  cursor: pointer;
+  width: 200px;
+  padding: 14px 40px;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 12px;
+  border-color: white;
+  color: black;
+  transition-duration: 0.5s;
+  box-shadow: 2px 4px 0px 0px;
+  text-align: center;
+}
+
+.canvaslink:hover {
+  background-image: linear-gradient(
+    to right,
+    rgb(45, 45, 248),
+    rgb(20, 243, 20)
+  );
+  color: white;
+}
+
+.canvasform {
+  text-align: center;
+}
