@@ -61,6 +61,8 @@
     background: transparent;
     transform-origin: left;
     animation: animate 2s linear infinite;
+    /*Below needs work for the load wheel to blend out better */
+    /* animation: 0s ease-out 0s 0 contentLoad; */
   }
   span:before {
     content: "";
@@ -90,8 +92,20 @@
     }
   }
 
+  /*CSS animation to load in content page after loadwheel */
   .contentPage {
     opacity: 0.01;
+    animation: 1s ease-out 0s 1 contentLoad;
+    animation-delay: 3300ms;
+  }
+
+  @keyframes contentLoad {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
   }
 
   body {
