@@ -4,7 +4,7 @@ let span = document.querySelector("span")
 
 window.onload=()=>
 {
-    setInterval(wheelAnimation, 4000)
+    setInterval(wheelAnimation, 3700)
 
 }
 
