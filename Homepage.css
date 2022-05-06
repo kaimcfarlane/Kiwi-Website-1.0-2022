@@ -4,6 +4,38 @@
 @import url("https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap");
 
 @media (min-width: 945px) {
+  .bg {
+    animation: slide 3s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, #7af53d 50%, #09f 50%);
+    bottom: 0%;
+    left: -50%;
+    opacity: 0.5;
+    position: fixed;
+    right: -50%;
+    top: 0%;
+    z-index: -1;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @keyframes slide {
+    0% {
+      transform: translateX(-25%);
+    }
+    100% {
+      transform: translateX(25%);
+    }
+  }
+
+  .bg2 {
+    animation-direction: alternate-reverse;
+    animation-duration: 4s;
+  }
+
+  .bg3 {
+    animation-duration: 5s;
+  }
+
   a {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
@@ -35,8 +67,8 @@
     text-shadow: 0 0 10px #00ffcc;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     display: block;
-    animation: loadWheelLeave 3s;
-    animation-delay: 2s;
+    animation: loadWheelLeave 3s, fadeOut 2s;
+    animation-delay: 2s, 2.5s;
   }
 
   @keyframes loadWheelLeave {
@@ -50,6 +82,16 @@
       font-size: 0;
     }
   }
+
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+
   /*CSS for load tail*/
   .loadWheel:before {
     content: "";
