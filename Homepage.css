@@ -67,7 +67,7 @@
     text-shadow: 0 0 10px #00ffcc;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     display: block;
-    animation: loadWheelLeave 3s, fadeOut 2s;
+    animation: loadWheelLeave 2s, fadeOut 1.5s;
     animation-delay: 2s, 2.5s;
   }
 
