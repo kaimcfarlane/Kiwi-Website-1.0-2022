@@ -254,8 +254,20 @@ inthe other divs interected*/
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 100px;
     overflow: hidden;
+    padding-top: 165px;
+    /* padding-left: 280px; */
+  }
+
+  .bannerText {
+    font-size: 30px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    color: aliceblue;
+  }
+
+  .bannerImg {
+    opacity: 65%;
   }
 
   /* This is the container for the boxes and social media*/
@@ -275,6 +287,8 @@ inthe other divs interected*/
     justify-content: space-between;
     align-items: center;
     align-content: center;
+    position: absolute;
+    bottom: 0px;
   }
 
   .mediaIcons {
