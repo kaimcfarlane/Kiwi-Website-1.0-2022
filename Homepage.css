@@ -209,9 +209,8 @@
 
   /*This is the style for the items on our nav*/
   .navigationitems {
-    color: white;
+    color: rgb(255, 255, 255);
     text-align: center;
-    cursor: pointer;
   }
 
   .item {
@@ -225,10 +224,11 @@
     transition: background-size 300ms ease-in;
   }
   .item:hover {
-    color: black;
     background-size: 80% 3px;
     transition: color 300ms ease;
-    transition: background-size 200ms;
+    transition: background-size 300ms;
+    cursor: pointer;
+    color: #00ffcc;
   }
 
   .itemHome {
@@ -243,10 +243,11 @@
   }
 
   .itemHome:hover {
-    color: black;
     background-size: 69% 3px;
     transition: color 300ms ease;
-    transition: background-size 200ms;
+    transition: background-size 300ms;
+    cursor: pointer;
+    color: #00ffcc;
   }
 
   .itemAbout {
@@ -261,10 +262,11 @@
   }
 
   .itemAbout:hover {
-    color: black;
     transition: color 300ms ease;
     background-size: 73% 3px;
-    transition: background-size 200ms;
+    transition: background-size 300ms;
+    cursor: pointer;
+    color: #00ffcc;
   }
 
   .item {
@@ -287,6 +289,25 @@ inthe other divs interected*/
     align-items: center;
     padding: 15px;
     color: antiquewhite;
+    /* animation: navEntrance 3s;
+    animation-delay: 4s; */
+  }
+
+  .logoAnimation {
+    transition: 0.15s ease-in-out;
+  }
+
+  .logoAnimation:hover {
+    transform: scale(1.15);
+  }
+
+  /* @keyframes navEntrance {
+    from {
+      : 0px;
+    }
+    to {
+      height: 50;
+    } */
   }
 
   .text {
