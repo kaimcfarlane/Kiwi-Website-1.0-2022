@@ -162,6 +162,7 @@
   }
 
   /*CSS animation to load in content page after loadwheel */
+
   .contentPage {
     opacity: 0.01;
     animation: 1s ease-out 0s 1 contentLoad;
@@ -182,6 +183,7 @@
     margin: 0;
     overflow-x: hidden;
     max-width: 100%;
+    scrollbar-color: blue red;
     /* display: none; */
   }
 
@@ -192,11 +194,6 @@
 
   #backgroundnavigationmenu {
     height: 100px;
-    /* background-image: linear-gradient(
-      to right,
-      rgb(45, 45, 248),
-      rgb(20, 243, 20)
-    ); */
     position: fixed;
     width: 100%;
 
@@ -211,6 +208,27 @@
   .navigationitems {
     color: rgb(255, 255, 255);
     text-align: center;
+    animation: slideIn 0.8s ease-in 0.9s forwards, fadeIn 1s;
+    animation-delay: 3.4s, 2.4s;
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 0;
+    }
+  }
+
+  @keyframes slideIn {
+    0% {
+      transform: translateY(-60px);
+    }
+    100% {
+      transform: translateY(0);
+    }
   }
 
   .item {
@@ -289,8 +307,17 @@ inthe other divs interected*/
     align-items: center;
     padding: 15px;
     color: antiquewhite;
-    /* animation: navEntrance 3s;
-    animation-delay: 4s; */
+    animation: logoFadeIn 0.8s ease-in, fadeIn 1.7s ease-in;
+    animation-delay: 4.5s, 2.8s;
+  }
+
+  @keyframes logoFadeIn {
+    from {
+      opacity: 0%;
+    }
+    to {
+      opacity: 100%;
+    }
   }
 
   .logoAnimation {
@@ -308,118 +335,120 @@ inthe other divs interected*/
     to {
       height: 50;
     } */
-  }
+}
 
-  .text {
-    color: aliceblue;
-    font-size: 200px;
-  }
+.text {
+  color: aliceblue;
+  font-size: 200px;
+}
 
-  /* This is the banner that goes inbetween SM and Nav*/
-  .banner {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    padding-top: 165px;
-    /* padding-left: 280px; */
-  }
+/* This is the banner that goes inbetween SM and Nav*/
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding-top: 165px;
+  /* padding-left: 280px; */
+}
 
-  .bannerText {
-    font-size: 10rem;
-    text-align: center;
-    /* height: 90vh; */
-    color: #fcedd8;
-    font-family: "Niconne", cursive;
-    font-weight: 700;
-    text-shadow: 5px 5px 0px #2b38eb, 10px 10px 0px #32efe1,
-      15px 15px 0px #46b59b, 20px 20px 0px #017e7f, 25px 25px 0px #052939,
-      30px 30px 0px #1ac139, 35px 35px 0px #4ac11a, 40px 40px 0px #28c11a,
-      45px 45px 0px #22db53;
-    padding-top: 73px;
-  }
+.bannerText {
+  font-size: 10rem;
+  text-align: center;
+  /* height: 90vh; */
+  color: #fcedd8;
+  font-family: "Niconne", cursive;
+  font-weight: 700;
+  text-shadow: 5px 5px 0px #2b38eb, 10px 10px 0px #32efe1, 15px 15px 0px #46b59b,
+    20px 20px 0px #017e7f, 25px 25px 0px #052939, 30px 30px 0px #1ac139,
+    35px 35px 0px #4ac11a, 40px 40px 0px #28c11a, 45px 45px 0px #22db53;
+  padding-top: 73px;
+}
 
-  .bannerImg {
-    opacity: 65%;
-  }
+.bannerImg {
+  opacity: 65%;
+}
 
-  /* This is the container for the boxes and social media*/
-  .container {
-    width: 100%;
-    height: 119px;
-    /* background-image: linear-gradient(
+/* This is the container for the boxes and social media*/
+.container {
+  width: 100%;
+  height: 119px;
+  /* background-image: linear-gradient(
       to right,
       rgb(45, 45, 248),
       rgb(20, 243, 20)
     ); */
-    border-radius: 0.25em;
-    /* box-shadow: 0 0 0.25em rgb(0 0 0 / 25%); */
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    align-content: center;
-    position: absolute;
-    bottom: 0px;
-  }
+  border-radius: 0.25em;
+  /* box-shadow: 0 0 0.25em rgb(0 0 0 / 25%); */
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  position: absolute;
+  bottom: 0px;
+}
 
-  .mediaIcons {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    align-content: center;
-    gap: 18px;
-    padding-left: 80px;
-  }
+.mediaIcons {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+  gap: 18px;
+  padding-left: 80px;
+}
 
-  .specificIcon {
-    transition: 0.15s ease-in-out;
-  }
+.specificIcon {
+  transition: 0.15s ease-in-out;
+  animation: logoFadeIn 0.8s ease-in, fadeIn 1.7s ease-in;
+  animation-delay: 4.5s, 2.8s;
+}
 
-  .specificIcon:hover {
-    transform: scale(1.25);
-  }
+.specificIcon:hover {
+  transform: scale(1.25);
+}
 
-  .line {
-    height: 2px;
-    background: black;
-    width: 150px;
-    margin-right: 7px;
-  }
+.line {
+  height: 2px;
+  background: black;
+  width: 150px;
+  margin-right: 7px;
+}
 
-  .pageLink {
-    padding-right: 57px;
-    padding-bottom: 13px;
-  }
+.pageLink {
+  padding-right: 57px;
+  padding-bottom: 13px;
+  animation: logoFadeIn 0.8s ease-in, fadeIn 1.7s ease-in;
+  animation-delay: 4.5s, 2.8s;
+}
 
-  /* Style fo the buttons links to SM */
-  .SMlogo {
-    font-family: "Monserrat", sans-serif;
-    background-image: linear-gradient(rgb(45, 45, 248), rgb(20, 243, 20));
-    cursor: pointer;
-    width: 170px;
-    padding: 14px 40px;
-    font-size: 20px;
-    font-weight: bold;
-    /* border-radius: 12px; */
-    border-color: black;
-    color: white;
-    transition-duration: 0.5s;
-    box-shadow: 2px 4px 0px 0px;
-  }
+/* Style fo the buttons links to SM */
+.SMlogo {
+  font-family: "Monserrat", sans-serif;
+  background-image: linear-gradient(rgb(45, 45, 248), rgb(20, 243, 20));
+  cursor: pointer;
+  width: 170px;
+  padding: 14px 40px;
+  font-size: 20px;
+  font-weight: bold;
+  /* border-radius: 12px; */
+  border-color: black;
+  color: white;
+  transition-duration: 0.5s;
+  box-shadow: 2px 4px 0px 0px;
+}
 
-  /* The hover color for links for SM */
-  .SMlogo:hover {
-    background-image: linear-gradient(
-      to right,
-      rgb(45, 45, 248),
-      rgb(20, 243, 20)
-    );
-    color: black;
-  }
+/* The hover color for links for SM */
+.SMlogo:hover {
+  background-image: linear-gradient(
+    to right,
+    rgb(45, 45, 248),
+    rgb(20, 243, 20)
+  );
+  color: black;
 }
 
 /* This for all media under a desktop screen size */
