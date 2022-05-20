@@ -46,6 +46,7 @@
     animation: gradient 15s ease infinite;
     position: fixed;
     width: 100%;
+    z-index: 1;
   }
 
   @keyframes gradient {
@@ -98,9 +99,9 @@ inthe other divs interected*/
   }
 
   .logo {
-    transition: 0.15s ease-in-out;
+    /* transition: 0.15s ease-in-out;
     animation: logoFadeIn 0.8s ease-in, fadeIn 1.7s ease-in;
-    animation-delay: 4.5s, 2.8s;
+    animation-delay: 4.5s, 2.8s; */
   }
 
   .logo:hover {
@@ -175,6 +176,35 @@ inthe other divs interected*/
     font-size: 20px;
     font-family: "EB Garamond", serif;
     display: none;
+  }
+
+  .active,
+  .aboutintro {
+    animation: fadeIn 1.5s ease-in;
+    color: black;
+    width: 680px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: black;
+    background-image: linear-gradient(
+      to right,
+      rgb(45, 45, 248),
+      rgb(20, 243, 20)
+    );
+    text-align: center;
+    font-size: 20px;
+    font-family: "EB Garamond", serif;
+    display: none;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
   }
 
   /* below is for property that makes button dissapear when clicked: Where we started appears */
@@ -285,6 +315,25 @@ inthe other divs interected*/
     display: none;
   }
 
+  .active,
+  .aboutmiddle {
+    animation: fadeIn 1.5s ease-in;
+    color: black;
+    width: 680px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: black;
+    background-image: linear-gradient(
+      to right,
+      rgb(45, 45, 248),
+      rgb(20, 243, 20)
+    );
+    text-align: center;
+    font-size: 20px;
+    font-family: "EB Garamond", serif;
+    display: none;
+  }
+
   /* .wrapperExpButton2 .active {
     display: none;
   } */
@@ -317,7 +366,28 @@ inthe other divs interected*/
     text-align: center;
     font-size: 20px;
     font-family: "EB Garamond", serif;
+    display: none;
   }
+
+  .active,
+  .aboutend {
+    animation: fadeIn 1.5s ease-in;
+    color: black;
+    width: 680px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: black;
+    background-image: linear-gradient(
+      to right,
+      rgb(45, 45, 248),
+      rgb(20, 243, 20)
+    );
+    text-align: center;
+    font-size: 20px;
+    font-family: "EB Garamond", serif;
+    display: none;
+  }
+
   .aboutendimg {
     border: 5px solid;
     border-radius: 8px;
