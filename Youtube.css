@@ -24,6 +24,15 @@
     display: none;
   }
 
+  #expText {
+    display: none;
+  }
+
+  .active,
+  .collapsible {
+    display: none;
+  }
+
   #backgroundnavigationmenu {
     height: 100px;
     /* background-image: linear-gradient(

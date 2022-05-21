@@ -12,6 +12,7 @@
     type="text/css"
     media="all"
     />
+    <script src="youtubeCollapsible.js" defer></script>
  </head>
 <body>
    <header>
@@ -50,13 +51,11 @@
        </div>
             <section class="canvascontainer">
                 <div class="canvasimg">
-                    <img src="Canvas webpic.png" alt="canvas image" height="400px" width="400px">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/mGJm9EmLHyc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
                 <div class="canvastext">
-                    <form action="https://youtu.be/mGJm9EmLHyc" class="canvasform" target="_blank">
-                        <button type="submit" class="canvaslink">Canvas Tips/Tricks</button>
-                        </form>
-                    <p>
+                        <button type="submit" class="canvaslink" id="expButton">Canvas Tips/Tricks</button>
+                    <p id="expText" class="exp0">
                         A short video going over the best features for students using Canvas. 
                         This includes a brief overview of the Canvas App and the Canvas Studio which commonly aren’t used by students.
                     </p>
@@ -64,13 +63,11 @@
             </section>
                  <section class="projectcontainer">
                      <div class="projectimg">
-                         <img src="Project C 1.png" alt="project image" height="400px" width="400px">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/pXDZp8jSskk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                      </div>
                      <div class="projecttext">
-                        <form action="https://youtu.be/pXDZp8jSskk" class="projectform" target="_blank">
-                            <button type="submit" class="projectlink">Project Calabasas</button>
-                            </form>
-                         <p>
+                            <button type="submit" class="projectlink" id="expButton">Project Calabasas</button>
+                         <p id="expText" class="exp1">
                             A short film created to display the power of video-editing software. 
                             This particular film was edited using Davinci Resolve 17 which is free on both Mac and Windows. 
                             What’s great about this video was that it took only 2 people to create. 
@@ -80,39 +77,33 @@
                  </section>
                 <section class="kiwicontainer">
                     <div class="kiwiimg">
-                             <img src="Kiwi Animation.png" alt="kiwi image" height="400px" width="400px">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/MZguKwLbHdM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                     <div class="kiwitext">
-                        <form action="https://youtu.be/MZguKwLbHdM" class="kiwiform" target="_blank">
-                            <button type="submit" class="kiwilink">Who is Kiwi</button>
-                            </form>
-                             <p>
+                            <button type="submit" class="kiwilink" id="expButton">Who is Kiwi</button>
+                             <p id="expText" class="exp2">
                                 An animation created to explain to new students what Kiwi-El-Gato was, and how they can access Kiwi’s free content.
                              </p>
                     </div>
                 </section>
                      <section class="virtualcontainer">
                          <div class="virtualimg">
-                             <img src="Actualizacion Virtual.png" alt="virtual image" height="400px" width="400px">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/uFEXPqIHVJQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                          </div>
                          <div class="virtualtext">
-                            <form action="https://youtu.be/uFEXPqIHVJQ" class="virtualform" target="_blank">
-                                <button type="submit" class="virtuallink">Actualizacion Virtual</button>
-                                </form>
-                             <p>
+                                <button type="submit" class="virtuallink" id="expButton">Actualizacion Virtual</button>
+                             <p id="expText" class="exp3">
                                 A promotional film created to display all of the new content coming to Kiwi-El-Gato this summer.
                              </p>
                          </div>
                      </section>    
                          <section class="semestercontainer">
                              <div class="semesterimg">
-                                 <img src="semesterpic.png" alt="semester image" height="400px" width="400px">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/EKgpqOFlz3M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                              </div>
                              <div class="semestertext">
-                                <form action="https://youtu.be/EKgpqOFlz3M" class="semesterform" target="_blank">
-                                    <button type="submit" class="semesterlink">Semester Grades</button>
-                                    </form>
-                                 <p>
+                                    <button type="submit" class="semesterlink" id="expButton">Semester Grades</button>
+                                 <p id="expText" class="exp4">
                                     A video explaining what semester grades actually are, why their important, and how to calculate them. 
                                     This video also comes with two free semester grade calculators as well.
                                  </p>
@@ -120,13 +111,11 @@
                          </section>         
                              <section class="volunteercontainer">
                                  <div class="volunteerimg">
-                                     <img src="volunteeerpic.png" alt="volunteer image" height="400px" width="400px">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/16IPrqAMD7A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                  </div>
                                  <div class="volunteertext">
-                                    <form action="https://youtu.be/16IPrqAMD7A" class="volunteerform" target="_blank">
-                                        <button type="submit" class="volunteerlink">Volunteer Hours</button>
-                                        </form>
-                                     <p>
+                                        <button type="submit" class="volunteerlink" id="expButton">Volunteer Hours</button>
+                                     <p id="expText" class="exp5">
                                         A video explaining the requirements for volunteer hours, the forms required to register hours, 
                                         and the hours needed to graduate high school and obtain certain scholarships.
                                      </p>
@@ -134,13 +123,11 @@
                              </section>            
                                  <section class="exemptioncontainer">
                                      <div class="exemptionimg">
-                                         <img src="exemptionpic.png" alt="exemption image" height="400px" width="400px">
+                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/Q_Qk0PYcyk4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                      </div>
                                      <div class="exemptiontext">
-                                        <form action="https://youtu.be/Q_Qk0PYcyk4" class="exemptionform" target="_blank">
-                                            <button type="submit" class="exemptionlink">Exemption Grades</button>
-                                            </form>
-                                         <p>
+                                            <button type="submit" class="exemptionlink" id="expButton">Exemption Grades</button>
+                                         <p id="expText" class="exp6">
                                             A video explaining what exemption grades are, the requirements for exempting a class, 
                                             and how to calculate an exempted grade. 
                                             This video also offers a free document that automatically calculates your exemption grade.
@@ -149,13 +136,11 @@
                                  </section>        
                                      <section class="linearcontainer">
                                          <div class="linearimg">
-                                             <img src="linearpic.png" alt="linear image" height="400px" width="400px">
+                                            <iframe width="560" height="315" src="https://www.youtube.com/embed/_9YXGE6S9N0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                          </div>
                                          <div class="lineartext">
-                                            <form action="https://youtu.be/_9YXGE6S9N0" class="linearform" target="_blank">
-                                                <button type="submit" class="linearlink">Linear Equations</button>
-                                                </form>
-                                             <p>
+                                                <button type="submit" class="linearlink" id="expButton">Linear Equations</button>
+                                             <p id="expText"  class="exp7">
                                                 A video explaining what Linear Equations are, 
                                                 all the formulas and content needed for them, 
                                                 and practice questions to explain them.
@@ -164,13 +149,11 @@
                                      </section>              
                                          <section class="factorcontainer">
                                              <div class="factorimg">
-                                                 <img src="factorpic.png" alt="factor image" height="400px" width="400px">
+                                                <iframe width="560" height="315" src="https://www.youtube.com/embed/inQk2Xrea-A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                              </div>
                                              <div class="factortext">
-                                                <form action="https://youtu.be/inQk2Xrea-A" class="factorform" target="_blank">
-                                                    <button type="submit" class="factorlink">Factoring Quadratics</button>
-                                                    </form>
-                                                 <p>
+                                                    <button type="submit" class="factorlink" id="expButton">Factoring Quadratics</button>
+                                                 <p id="expText" class="exp8">
                                                     A video explaining how the factor quadratic equations 
                                                     and all the methods to factor different quadratics. 
                                                     It also offers worked out practice problems to factor quadratics.
@@ -179,13 +162,11 @@
                                          </section>   
                                              <section class="quadraticscontainer">
                                                  <div class="quadraticsimg">
-                                                     <img src="quadratics pic.png" alt="quadratics image" height="400px" width="400px">
+                                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/OhW3YQNZg9w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                                  </div>
                                                  <div class="quadraticstext">
-                                                    <form action="https://youtu.be/OhW3YQNZg9w" class="quadraticsform" target="_blank">
-                                                        <button type="submit" class="quadraticslink">Quadratics Overview</button>
-                                                        </form>
-                                                     <p>
+                                                        <button type="submit" class="quadraticslink" id="expButton">Quadratics Overview</button>
+                                                     <p id="expText"  class="exp9">
                                                         A video explaining what Quadratic Equations are, 
                                                         all the formulas and content needed for them, 
                                                         and worked out practice questions to explain them.
@@ -194,13 +175,11 @@
                                              </section>    
                                                   <section class="systemscontainer">
                                                       <div class="systemsimg">
-                                                          <img src="systemspic.png" alt="systems image" height="400px" width="400px">
+                                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/WUEGKLKxM-I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                                       </div>
                                                       <div class="systemstext">
-                                                        <form action="https://youtu.be/WUEGKLKxM-I" class="systemsform" target="_blank">
-                                                            <button type="submit" class="systemslink">Systems of Equations</button>
-                                                            </form>
-                                                          <p>
+                                                            <button type="submit" class="systemslink" id="expButton">Systems of Equations</button>
+                                                          <p id="expText" class="exp10">
                                                             A video explaining what systems of equations are and all the different properties they have. 
                                                             This video also provides different methods to solve them and visual/written worked out problems.
                                                           </p>
@@ -208,13 +187,11 @@
                                                   </section>   
                                                       <section class="inequalitiescontainer">
                                                           <div class="inequalitiesimg">
-                                                              <img src="inequalitispic.png" alt="Inequalities image" height="400px" width="400px">
+                                                            <iframe width="560" height="315" src="https://www.youtube.com/embed/8I-MChkX5kQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                                           </div>
                                                           <div class="inequalitiestext">
-                                                            <form action="https://youtu.be/8I-MChkX5kQ" class="inequalitiesform" target="_blank">
-                                                                <button type="submit" class="inequalitieslink">Inequalities</button>
-                                                                </form>
-                                                              <p>
+                                                                <button type="submit" class="inequalitieslink" id="expButton">Inequalities</button>
+                                                              <p id="expText"  class="exp11">
                                                                 A video explaining what inequalities are, all the rules for solving inequalities, 
                                                                 and worked out practice problems for them.
                                                               </p>
@@ -222,13 +199,11 @@
                                                       </section>     
                                                            <section class="satcontainer">
                                                                <div class="satimg">
-                                                                   <img src="satpic.png" alt="SAT image" height="400px" width="400px">
+                                                                <iframe width="560" height="315" src="https://www.youtube.com/embed/iK8OzcGd3Do" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                                                </div>
                                                                <div class="sattext">
-                                                                <form action="https://youtu.be/iK8OzcGd3Do" class="satform" target="_blank">
-                                                                    <button type="submit" class="satlink">SAT Score</button>
-                                                                    </form>
-                                                                   <p>
+                                                                    <button type="submit" class="satlink" id="expButton">SAT Score</button>
+                                                                   <p id="expText"  class="exp12">
                                                                     A video providing some of the best resources for a better SAT/ACT score.
                                                                    </p>
                                                                </div>
@@ -312,7 +287,7 @@
             </div>
         </section>
     </main>
-    
+
     <!-- <main>
         <section class="container">
             <div class="SocialMedia">
