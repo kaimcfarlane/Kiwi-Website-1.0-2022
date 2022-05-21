@@ -4,7 +4,7 @@ var i;
 for (i = 0; i < 13; i++) {
     if(i == 0) {
         coll[i].addEventListener("click", function() {
-            // this.classList.toggle("active");
+            this.classList.toggle("active");
             var content = document.querySelector(".exp0");
             if (content.style.display === "block") {
             // content.style.display = "none";
