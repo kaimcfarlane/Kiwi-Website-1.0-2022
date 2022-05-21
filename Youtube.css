@@ -70,6 +70,11 @@ inthe other divs interected*/
     align-items: center;
     padding: 15px;
     color: antiquewhite;
+    transition: 0.15s ease-in-out;
+  }
+
+  .logo:hover {
+    transform: scale(1.15);
   }
 
   .text {
