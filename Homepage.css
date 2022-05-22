@@ -467,7 +467,7 @@ inthe other divs interected*/
   }
 
   /*This is the style for the background of the navigation menu*/
-  #backgroundnavigationmenu {
+  /* #backgroundnavigationmenu {
     height: 100px;
     background-image: linear-gradient(
       to right,
@@ -476,6 +476,19 @@ inthe other divs interected*/
     );
     position: fixed;
     width: 100%;
+    z-index: 1;
+  } */
+
+  #backgroundnavigationmenu {
+    height: 100px;
+    position: fixed;
+    width: 100%;
+
+    /*Below is for the new background for navigation menu*/
+    z-index: 1;
+    /* background-color: rgba(255, 255, 255, 0.8); */
+    border-radius: 0.25em;
+    box-shadow: 0 0 0.25em rgb(0 0 0 / 25%);
   }
 
   /*This is the style for the items on our nav*/
@@ -593,8 +606,312 @@ inthe other divs interected*/
     overflow: hidden;
   }
 
+  .bg {
+    animation: slide 3s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, #7af53d 50%, #09f 50%);
+    bottom: 0%;
+    left: -50%;
+    opacity: 0.5;
+    position: fixed;
+    right: -50%;
+    top: 0%;
+    z-index: -1;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @keyframes slide {
+    0% {
+      transform: translateX(-25%);
+    }
+    100% {
+      transform: translateX(25%);
+    }
+  }
+
+  .bg2 {
+    animation-direction: alternate-reverse;
+    animation-duration: 4s;
+  }
+
+  .bg3 {
+    animation-duration: 5s;
+  }
+
+  a {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+  }
+
+  .loadWheel {
+    /* display: block;
+    color: black;
+    font-size: 500px; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 150px;
+    height: 150px;
+    background: transparent;
+    border: 3px solid #3c3c3c;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 150px;
+    font-family: sans-serif;
+    font-size: 20px;
+    color: #00ff51;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px #00ffcc;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    display: block;
+    animation: loadWheelLeave 2s, fadeOut 1.5s;
+    animation-delay: 2s, 2.5s;
+  }
+
+  @keyframes loadWheelLeave {
+    from {
+      width: 150px;
+      height: 150px;
+    }
+    to {
+      width: 0;
+      height: 0;
+      font-size: 0;
+    }
+  }
+
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+
+  /*CSS for load tail*/
+  .loadWheel:before {
+    content: "";
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    width: 100%;
+    height: 100%;
+    border: 3px solid transparent;
+    border-radius: 50%;
+    animation: animateC 2s linear infinite,
+      colorChangeLoadWheel 3s alternate infinite;
+  }
+
+  span {
+    display: block;
+    position: absolute;
+    top: calc(50% - 2px);
+    left: 50%;
+    width: 50%;
+    height: 4px;
+    background: transparent;
+    transform-origin: left;
+    animation: animate 2s linear infinite;
+    /* contentLoad 1s ease-in-out 0s; */
+    /*Below needs work for the load wheel to blend out better */
+    /* animation: 0s ease-out 0s 0 contentLoad; */
+
+    /*Below is rotatitng dot*/
+  }
+  span:before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #00ffa2;
+    top: -6px;
+    right: -8px;
+    box-shadow: 0 0 20px #00ff44;
+  }
+  @keyframes animateC {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes animate {
+    0% {
+      transform: rotate(45deg);
+    }
+    100% {
+      transform: rotate(405deg);
+    }
+  }
+  @keyframes colorChangeLoadWheel {
+    from {
+      border-top: 3px solid rgb(0, 0, 0);
+      border-right: 3px solid rgb(0, 0, 0);
+    }
+    to {
+      border-top: 3px solid rgb(0, 255, 213);
+      border-right: 3px solid rgb(0, 222, 238);
+      filter: brightness(200%);
+    }
+  }
+
+  /*CSS animation to load in content page after loadwheel */
+
+  .contentPage {
+    opacity: 0.01;
+    animation: 1s ease-out 0s 1 contentLoad;
+    animation-delay: 2900ms;
+  }
+
+  @keyframes contentLoad {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding-top: 0px;
+    /* padding-left: 280px; */
+  }
+
+  .bannerText {
+    font-size: 8rem;
+    text-align: center;
+    /* height: 90vh; */
+    color: #fcedd8;
+    font-family: "Niconne", cursive;
+    font-weight: 700;
+    text-shadow: 5px 5px 0px #2b38eb, 10px 10px 0px #32efe1,
+      15px 15px 0px #46b59b, 20px 20px 0px #017e7f, 25px 25px 0px #052939,
+      30px 30px 0px #1ac139, 35px 35px 0px #4ac11a, 40px 40px 0px #28c11a,
+      45px 45px 0px #22db53;
+    padding-top: 73px;
+    margin: auto;
+    width: 50%;
+  }
+
+  body {
+    background-color: black;
+    margin: 0;
+    overflow-x: hidden;
+    max-width: 100%;
+    scrollbar-color: blue red;
+  }
+
+  /*This is the style for the background of the navigation menu*/
+  /* #expandbtn {
+    display: none;
+  }
+
+  #backgroundnavigationmenu {
+    height: 100px;
+    position: fixed;
+    width: 100%;
+    border-radius: 0.25em;
+    box-shadow: 0 0 0.25em rgb(0 0 0 / 25%);
+  } */
+
+  /*This is the style for the items on our nav*/
+
+  /* .navigationitems {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    animation: slideIn 0.8s ease-in 0.9s forwards, fadeIn 1s;
+    animation-delay: 3.4s, 2.4s;
+  } */
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 0;
+    }
+  }
+
+  @keyframes slideIn {
+    0% {
+      transform: translateY(-60px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
   /* This is the container for the boxes and social media*/
+
   .container {
+    width: 100%;
+    height: 119px;
+    /* background-image: linear-gradient(
+        to right,
+        rgb(45, 45, 248),
+        rgb(20, 243, 20)
+      ); */
+    border-radius: 0.25em;
+    /* box-shadow: 0 0 0.25em rgb(0 0 0 / 25%); */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    position: absolute;
+    bottom: 0px;
+  }
+
+  .mediaIcons {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    gap: 18px;
+    padding-left: 80px;
+  }
+
+  .specificIcon {
+    transition: 0.15s ease-in-out;
+    animation: logoFadeIn 0.8s ease-in, fadeIn 1.7s ease-in;
+    animation-delay: 4.5s, 2.8s;
+  }
+
+  .specificIcon:hover {
+    transform: scale(1.25);
+  }
+
+  .line {
+    height: 2px;
+    background: black;
+    width: 150px;
+    margin-right: 7px;
+  }
+
+  .pageLink {
+    padding-right: 57px;
+    padding-bottom: 13px;
+    animation: logoFadeIn 0.8s ease-in, fadeIn 1.7s ease-in;
+    animation-delay: 4.5s, 2.8s;
+  }
+
+  /* .container {
     width: 100%;
     height: 710px;
     background-image: linear-gradient(
@@ -609,7 +926,7 @@ inthe other divs interected*/
     justify-content: space-evenly;
     align-items: center;
     align-content: center;
-  }
+  } */
   /* Style fo the buttons links to SM */
   .SMlogo {
     font-family: "Monserrat", sans-serif;
@@ -619,7 +936,7 @@ inthe other divs interected*/
     padding: 14px 40px;
     font-size: 20px;
     font-weight: bold;
-    border-radius: 12px;
+    /* border-radius: 12px; */
     border-color: black;
     color: white;
     transition-duration: 0.5s;
