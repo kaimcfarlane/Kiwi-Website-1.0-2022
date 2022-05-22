@@ -492,6 +492,7 @@ inthe other divs interected*/
   }
 
   /*This is the style for the items on our nav*/
+
   #expandbtn {
     font-family: "Monserrat", sans-serif;
     background-image: linear-gradient(rgb(45, 45, 248), rgb(20, 243, 20));
@@ -563,10 +564,6 @@ inthe other divs interected*/
     right: 5%;
   }
 
-  #mobile-menu.active {
-    /* blah blah */
-  }
-
   .bar {
     display: block;
     cursor: pointer;
@@ -590,6 +587,22 @@ inthe other divs interected*/
     align-items: center;
     padding: 15px;
     color: antiquewhite;
+    animation: logoFadeIn 0.8s ease-in, fadeIn 1.7s ease-in;
+    animation-delay: 4.5s, 2.8s;
+    transition: 0.15s ease-in-out;
+  }
+
+  @keyframes logoFadeIn {
+    from {
+      opacity: 0%;
+    }
+    to {
+      opacity: 100%;
+    }
+  }
+
+  .logo:hover {
+    transform: scale(1.15);
   }
 
   .text {
