@@ -673,13 +673,23 @@ path.two {
   /*This is the style for the background of the navigation menu*/
   #backgroundnavigationmenu {
     height: 100px;
-    background-image: linear-gradient(
+    /* background-image: linear-gradient(
       to right,
       rgb(45, 45, 248),
       rgb(20, 243, 20)
-    );
+    ); */
     position: fixed;
     width: 100%;
+    background: linear-gradient(
+      -45deg,
+      rgb(45, 45, 248),
+      rgb(4, 189, 35),
+      #23a6d5,
+      #23d5ab
+    );
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    z-index: 1;
   }
 
   /*This is the style for the items on our nav*/
@@ -781,6 +791,11 @@ path.two {
     align-items: center;
     padding: 15px;
     color: antiquewhite;
+    transition: 0.15s ease-in-out;
+  }
+
+  .logo:hover {
+    transform: scale(1.15);
   }
 
   .text {
@@ -964,12 +979,20 @@ path.two {
   .container {
     width: 100%;
     height: 710px;
-    background-image: linear-gradient(
+    /* background-image: linear-gradient(
       to right,
       rgb(45, 45, 248),
       rgb(20, 243, 20)
+    ); */
+    background: linear-gradient(
+      -45deg,
+      rgb(45, 45, 248),
+      rgb(4, 189, 35),
+      #23a6d5,
+      #23d5ab
     );
-
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
