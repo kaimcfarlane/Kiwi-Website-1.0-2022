@@ -265,6 +265,8 @@ inthe other divs interected*/
     border: 3px solid #333;
     transition: all 0.35s;
     font-family: "Lato", sans-serif;
+    box-shadow: 4px 4px 3px 0px;
+    color: #d1d1d1;
   }
 
   .icon {
@@ -294,6 +296,7 @@ inthe other divs interected*/
     border: 3px solid #0e881e;
     background: transparent;
     color: #000000;
+    box-shadow: 0px, 0px, 0px, 0px;
   }
 
   .collapsible1:hover + .icon {
