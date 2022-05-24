@@ -249,7 +249,7 @@
     color: #00ffcc;
   }
 
-  .itemHome {
+  #itemHome {
     transition: all 0.3s ease 0s;
     display: inline-flex;
     padding-left: 30px;
@@ -260,7 +260,7 @@
     transition: background-size 300ms ease-in;
   }
 
-  .itemHome:hover {
+  #itemHome:hover {
     background-size: 69% 3px;
     transition: color 300ms ease;
     transition: background-size 300ms;
@@ -268,7 +268,7 @@
     color: #00ffcc;
   }
 
-  .itemAbout {
+  #itemAbout {
     transition: all 0.3s ease 0s;
     display: inline-flex;
     padding-left: 30px;
@@ -279,7 +279,7 @@
     transition: background-size 300ms ease-in;
   }
 
-  .itemAbout:hover {
+  #itemAbout:hover {
     transition: color 300ms ease;
     background-size: 73% 3px;
     transition: background-size 300ms;
@@ -449,6 +449,14 @@ inthe other divs interected*/
     rgb(20, 243, 20)
   );
   color: black;
+}
+
+/*This is to hopefully eleimate the padding on text bewteen mobile and laptop size*/
+
+@media (max-width: 1157px) {
+  .bannerText {
+    padding-top: 0px;
+  }
 }
 
 /* This for all media under a desktop screen size */
