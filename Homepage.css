@@ -347,7 +347,7 @@ inthe other divs interected*/
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
+  /* overflow: hidden; */
   padding-top: 165px;
   /* padding-left: 280px; */
 }
@@ -972,5 +972,29 @@ inthe other divs interected*/
       rgb(20, 243, 20)
     );
     color: black;
+  }
+}
+
+@media (min-height: 860px) and (min-width: 945px) {
+  .bannerText {
+    padding-top: 120px;
+    font-size: 12rem;
+  }
+}
+
+/* @media (min-height: 800px) and (max-width: 1157px)  */
+
+@media (min-height: 860px) and (max-width: 1389px) {
+  .bannerText {
+    /* padding-top: 31px; */
+    padding-top: 0px;
+    font-size: 12rem;
+  }
+}
+
+@media (min-height: 860px) and (max-width: 945px) {
+  .bannerText {
+    padding-top: 102px;
+    font-size: 9rem;
   }
 }

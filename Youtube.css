@@ -224,6 +224,10 @@ inthe other divs interected*/
     overflow: hidden;
   }
 
+  .youtubePageImg {
+    width: 100%;
+  }
+
   .youtubecontent {
     justify-content: space-around;
   }

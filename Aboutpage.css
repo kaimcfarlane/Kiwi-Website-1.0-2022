@@ -135,6 +135,10 @@ inthe other divs interected*/
     overflow: hidden;
   }
 
+  .aboutPageImg {
+    width: 100%;
+  }
+
   .aboutcontent {
     background-image: linear-gradient(to right, #56ab2f, #63cde0);
   }

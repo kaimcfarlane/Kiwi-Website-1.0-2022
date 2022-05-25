@@ -104,6 +104,10 @@
     overflow: hidden;
   }
 
+  .codePageImg {
+    width: 100%;
+  }
+
   .educationelements {
     color: aliceblue;
     text-align: center;

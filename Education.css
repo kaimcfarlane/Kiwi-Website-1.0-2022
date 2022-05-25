@@ -115,6 +115,10 @@ inthe other divs interected*/
     overflow: hidden;
   }
 
+  .educationPageImg {
+    width: 100%;
+  }
+
   .educationcontent {
     justify-content: space-around;
   }

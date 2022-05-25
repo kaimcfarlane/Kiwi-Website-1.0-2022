@@ -138,6 +138,10 @@ inthe other divs interected*/
   overflow: hidden;
 }
 
+.contentPageImg {
+  width: 100%;
+}
+
 .educationelements {
   color: aliceblue;
   text-align: center;
