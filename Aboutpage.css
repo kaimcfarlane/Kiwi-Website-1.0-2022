@@ -1195,3 +1195,15 @@ path.two {
     margin-right: -170px;
   }
 }
+
+@media (max-width: 1970px) and (min-width: 1635px) {
+  .wrapperExpButton {
+    margin-left: 335px;
+  }
+}
+
+@media (max-width: 2250px) and (min-width: 1970px) {
+  .wrapperExpButton {
+    margin-left: 615px;
+  }
+}
