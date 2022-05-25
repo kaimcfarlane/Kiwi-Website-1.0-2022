@@ -931,6 +931,8 @@ path.two {
     border: 3px solid #333;
     transition: all 0.35s;
     font-family: "Lato", sans-serif;
+    box-shadow: 4px 4px 3px 0px;
+    color: #d1d1d1;
   }
 
   .icon {
@@ -1185,5 +1187,11 @@ path.two {
       rgb(20, 243, 20)
     );
     color: black;
+  }
+}
+
+@media (max-width: 1135px) and (min-width: 945px) {
+  .wrapperExpButton {
+    margin-right: -170px;
   }
 }
