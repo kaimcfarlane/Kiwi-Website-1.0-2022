@@ -1647,3 +1647,10 @@ path.two {
 .canvasform {
   text-align: center;
 }
+
+@media (max-width: 450px) {
+  .vid {
+    width: 400px;
+    height: 226px;
+  }
+}
