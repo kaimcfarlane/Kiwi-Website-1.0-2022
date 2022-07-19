@@ -1209,3 +1209,17 @@
     color: black;
   }
 }
+
+@media (max-width: 450px) {
+  .tool {
+    width: 375px;
+  }
+
+  #w3 {
+    margin-bottom: 20px;
+  }
+
+  .canvasimg {
+    width: 450px;
+  }
+}

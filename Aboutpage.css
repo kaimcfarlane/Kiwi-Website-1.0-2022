@@ -1207,3 +1207,36 @@ path.two {
     margin-left: 615px;
   }
 }
+
+@media (max-width: 450px) {
+  .aboutintroimg {
+    height: 400px;
+  }
+
+  .imgOne {
+    height: 400px;
+    width: 400px;
+  }
+
+  .aboutmiddleimg {
+    height: 400px;
+  }
+
+  .imgTwo {
+    height: 400px;
+    width: 400px;
+  }
+
+  .aboutendimg {
+    height: 400px;
+  }
+
+  .imgThree {
+    height: 400px;
+    width: 400px;
+  }
+
+  .wrapperExpButton {
+    margin-left: 251px;
+  }
+}

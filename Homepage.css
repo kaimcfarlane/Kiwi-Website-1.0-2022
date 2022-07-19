@@ -998,3 +998,35 @@ inthe other divs interected*/
     font-size: 9rem;
   }
 }
+
+@media (max-width: 450px) {
+  .bannerText {
+    padding-top: 122px;
+    font-size: 130px;
+    margin-left: 5px;
+    font-family: emoji;
+  }
+
+  .banner {
+    overflow: visible;
+  }
+
+  #el {
+    margin-left: 86px;
+  }
+
+  .container {
+    bottom: 10px;
+  }
+
+  .mediaIcons {
+    gap: 59px;
+  }
+
+  .pageLink {
+    padding-right: 63px;
+    margin-left: 98px;
+    margin-top: 20px;
+    padding-bottom: 22px;
+  }
+}

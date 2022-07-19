@@ -1030,3 +1030,9 @@ path.two {
     color: black;
   }
 }
+
+@media (max-width: 450px) {
+  .educationelements {
+    font-size: 40px;
+  }
+}
