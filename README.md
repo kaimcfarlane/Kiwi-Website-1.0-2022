@@ -6,6 +6,6 @@
 
  All of my HTML/CSS files are organized by page of the website (e.g. index.html is the main page for the website) and my scripts are named after the specific function I used it for in my page (e.g. loadWheel.js is for the loadwheel animation). 
 
-Website: kiwielgato.com
+Website: [kiwielgato.com](kiwielgato.com)
 
 Website Video Preview: [Kiwi-El-Gato Website Preview (3).mp4.zip](https://github.com/kaimcfarlane/Kiwi-Website-1.0-2022/files/9462888/Kiwi-El-Gato.Website.Preview.3.mp4.zip)
